@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 330" width="1120" height="330" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>Effect of temperature on the probability distribution</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<text x="20" y="30" font-size="24" fill="#7a1f2b" font-weight="700" text-anchor="start">T = 0.3</text>
+<text x="120" y="30" font-size="20" fill="#626a70" font-weight="400" text-anchor="start" font-style="italic">predictable</text>
+<line x1="76" y1="50" x2="76" y2="290" stroke="#c9ced2" stroke-width="1"/>
+<text x="64" y="81.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">mat</text>
+<path d="M76,63.0 h124.5 q4,0 4,4 v14 q0,4 -4,4 h-124.5 z" fill="#7a1f2b"/>
+<text x="215" y="81.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">96%</text>
+<text x="64" y="129.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">sofa</text>
+<path d="M76,111.0 h2.2 q2.20568789963741,0 2.20568789963741,2.20568789963741 v17.588624200725178 q0,2.20568789963741 -2.20568789963741,2.20568789963741 h-2.2 z" fill="#7a1f2b"/>
+<text x="90" y="129.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">3%</text>
+<text x="64" y="177.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">floor</text>
+<path d="M76,159.0 h1.5 q1.5,0 1.5,1.5 v19.0 q0,1.5 -1.5,1.5 h-1.5 z" fill="#7a1f2b"/>
+<text x="89" y="177.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">1%</text>
+<text x="64" y="225.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">roof</text>
+<path d="M76,207.0 h1.5 q1.5,0 1.5,1.5 v19.0 q0,1.5 -1.5,1.5 h-1.5 z" fill="#7a1f2b"/>
+<text x="89" y="225.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">0%</text>
+<text x="64" y="273.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">moon</text>
+<path d="M76,255.0 h1.5 q1.5,0 1.5,1.5 v19.0 q0,1.5 -1.5,1.5 h-1.5 z" fill="#7a1f2b"/>
+<text x="89" y="273.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">0%</text>
+<text x="400" y="30" font-size="24" fill="#7a1f2b" font-weight="700" text-anchor="start">T = 1</text>
+<text x="500" y="30" font-size="20" fill="#626a70" font-weight="400" text-anchor="start" font-style="italic">as learned</text>
+<line x1="456" y1="50" x2="456" y2="290" stroke="#c9ced2" stroke-width="1"/>
+<text x="444" y="81.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">mat</text>
+<path d="M456,63.0 h69.7 q4,0 4,4 v14 q0,4 -4,4 h-69.7 z" fill="#7a1f2b"/>
+<text x="540" y="81.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">55%</text>
+<text x="444" y="129.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">sofa</text>
+<path d="M456,111.0 h22.8 q4,0 4,4 v14 q0,4 -4,4 h-22.8 z" fill="#7a1f2b"/>
+<text x="493" y="129.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">20%</text>
+<text x="444" y="177.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">floor</text>
+<path d="M456,159.0 h12.1 q4,0 4,4 v14 q0,4 -4,4 h-12.1 z" fill="#7a1f2b"/>
+<text x="482" y="177.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">12%</text>
+<text x="444" y="225.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">roof</text>
+<path d="M456,207.0 h6.7 q4,0 4,4 v14 q0,4 -4,4 h-6.7 z" fill="#7a1f2b"/>
+<text x="477" y="225.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">8%</text>
+<text x="444" y="273.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">moon</text>
+<path d="M456,255.0 h3.4 q3.3500000000000005,0 3.3500000000000005,3.3500000000000005 v15.299999999999999 q0,3.3500000000000005 -3.3500000000000005,3.3500000000000005 h-3.4 z" fill="#7a1f2b"/>
+<text x="473" y="273.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">5%</text>
+<text x="780" y="30" font-size="24" fill="#7a1f2b" font-weight="700" text-anchor="start">T = 2</text>
+<text x="880" y="30" font-size="20" fill="#626a70" font-weight="400" text-anchor="start" font-style="italic">adventurous</text>
+<line x1="836" y1="50" x2="836" y2="290" stroke="#c9ced2" stroke-width="1"/>
+<text x="824" y="81.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">mat</text>
+<path d="M836,63.0 h44.7 q4,0 4,4 v14 q0,4 -4,4 h-44.7 z" fill="#7a1f2b"/>
+<text x="895" y="81.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">36%</text>
+<text x="824" y="129.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">sofa</text>
+<path d="M836,111.0 h25.4 q4,0 4,4 v14 q0,4 -4,4 h-25.4 z" fill="#7a1f2b"/>
+<text x="875" y="129.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">22%</text>
+<text x="824" y="177.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">floor</text>
+<path d="M836,159.0 h18.7 q4,0 4,4 v14 q0,4 -4,4 h-18.7 z" fill="#7a1f2b"/>
+<text x="869" y="177.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">17%</text>
+<text x="824" y="225.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">roof</text>
+<path d="M836,207.0 h14.6 q4,0 4,4 v14 q0,4 -4,4 h-14.6 z" fill="#7a1f2b"/>
+<text x="865" y="225.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">14%</text>
+<text x="824" y="273.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">moon</text>
+<path d="M836,255.0 h10.7 q4,0 4,4 v14 q0,4 -4,4 h-10.7 z" fill="#7a1f2b"/>
+<text x="861" y="273.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">11%</text>
+<text x="560" y="322" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">“The cat sat on the …”: same model, same scores, three temperatures (illustration)</text>
+</svg>

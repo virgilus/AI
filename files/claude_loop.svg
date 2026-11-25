@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 300" width="1120" height="300" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>Claude Code: gather context, take action, verify results</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<rect x="10" y="95" width="150" height="90" rx="10" fill="#173541" stroke="#173541" stroke-width="2"/>
+<text x="85.0" y="146.5" font-size="20" fill="#fff" font-weight="700" text-anchor="middle">Your prompt</text>
+<path d="M164,140 L206,140" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)"/>
+<rect x="210" y="40" width="720" height="200" rx="18" fill="#fff" stroke="#7a1f2b" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="235" y="90" width="205" height="95" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="337.5" y="132.5" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Gather context</text>
+<text x="337.5" y="157.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">search, read files</text>
+<rect x="467" y="90" width="205" height="95" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="569.5" y="132.5" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Take action</text>
+<text x="569.5" y="157.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">edit, run, browse</text>
+<rect x="699" y="90" width="205" height="95" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="801.5" y="132.5" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Verify results</text>
+<text x="801.5" y="157.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">tests, screenshots</text>
+<path d="M443,137 L464,137" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<path d="M675,137 L696,137" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<path d="M801,190 C801,232 338,232 338,190" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<text x="570" y="76" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">repeat until the task is complete</text>
+<path d="M934,140 L976,140" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)"/>
+<rect x="980" y="95" width="130" height="90" rx="10" fill="#173541" stroke="#173541" stroke-width="2"/>
+<text x="1045.0" y="147.5" font-size="22" fill="#fff" font-weight="700" text-anchor="middle">Done</text>
+<text x="570" y="280" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">You can interrupt at any point with Esc</text>
+</svg>

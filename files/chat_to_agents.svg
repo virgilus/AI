@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 360" width="1120" height="360" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>From chatbots to agents, 2022 to 2026</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<path d="M20,180 L1105,180" fill="none" stroke="#626a70" stroke-width="3" stroke-linejoin="round" marker-end="url(#m626a70)"/>
+<circle cx="110" cy="180" r="10" fill="#7a1f2b" stroke="#fff" stroke-width="3"/>
+<text x="110" y="213" font-size="21" fill="#7a1f2b" font-weight="700" text-anchor="middle">2022</text>
+<rect x="5" y="15" width="210" height="112" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="110.0" y="54.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Chat</text>
+<text x="110.0" y="80.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">ChatGPT: text in,</text>
+<text x="110.0" y="104.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">text out</text>
+<line x1="110" y1="129" x2="110" y2="168" stroke="#c9ced2" stroke-width="2"/>
+<circle cx="328" cy="180" r="10" fill="#7a1f2b" stroke="#fff" stroke-width="3"/>
+<text x="328" y="162" font-size="21" fill="#7a1f2b" font-weight="700" text-anchor="middle">2023</text>
+<rect x="223" y="235" width="210" height="112" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="328.0" y="274.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Tools, images</text>
+<text x="328.0" y="300.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">function calling,</text>
+<text x="328.0" y="324.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">vision, plugins</text>
+<line x1="328" y1="233" x2="328" y2="192" stroke="#c9ced2" stroke-width="2"/>
+<circle cx="546" cy="180" r="10" fill="#7a1f2b" stroke="#fff" stroke-width="3"/>
+<text x="546" y="213" font-size="21" fill="#7a1f2b" font-weight="700" text-anchor="middle">2024</text>
+<rect x="441" y="15" width="210" height="112" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="546.0" y="54.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Reasoning</text>
+<text x="546.0" y="80.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">o1, computer use,</text>
+<text x="546.0" y="104.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">MCP</text>
+<line x1="546" y1="129" x2="546" y2="168" stroke="#c9ced2" stroke-width="2"/>
+<circle cx="764" cy="180" r="10" fill="#7a1f2b" stroke="#fff" stroke-width="3"/>
+<text x="764" y="162" font-size="21" fill="#7a1f2b" font-weight="700" text-anchor="middle">2025</text>
+<rect x="659" y="235" width="210" height="112" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="764.0" y="274.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Coding agents</text>
+<text x="764.0" y="300.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">Claude Code, Codex,</text>
+<text x="764.0" y="324.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">Gemini CLI</text>
+<line x1="764" y1="233" x2="764" y2="192" stroke="#c9ced2" stroke-width="2"/>
+<circle cx="982" cy="180" r="10" fill="#7a1f2b" stroke="#fff" stroke-width="3"/>
+<text x="982" y="213" font-size="21" fill="#7a1f2b" font-weight="700" text-anchor="middle">2026</text>
+<rect x="877" y="15" width="210" height="112" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="982.0" y="54.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Long tasks</text>
+<text x="982.0" y="80.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">hours of work,</text>
+<text x="982.0" y="104.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">teams of agents</text>
+<line x1="982" y1="129" x2="982" y2="168" stroke="#c9ced2" stroke-width="2"/>
+</svg>

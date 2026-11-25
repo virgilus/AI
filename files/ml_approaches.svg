@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 400" width="1120" height="400" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>Supervised, unsupervised and reinforcement learning</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<rect x="10" y="5" width="350" height="390" rx="12" fill="#fff" stroke="#c9ced2" stroke-width="1"/>
+<text x="185" y="42" font-size="25" fill="#7a1f2b" font-weight="700" text-anchor="middle">Supervised</text>
+<rect x="385" y="5" width="350" height="390" rx="12" fill="#fff" stroke="#c9ced2" stroke-width="1"/>
+<text x="560" y="42" font-size="25" fill="#7a1f2b" font-weight="700" text-anchor="middle">Unsupervised</text>
+<rect x="760" y="5" width="350" height="390" rx="12" fill="#fff" stroke="#c9ced2" stroke-width="1"/>
+<text x="935" y="42" font-size="25" fill="#7a1f2b" font-weight="700" text-anchor="middle">Reinforcement</text>
+<circle cx="111" cy="161" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="243" y="236" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="135" cy="160" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="297" y="207" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="112" cy="133" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="234" y="224" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="116" cy="160" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="269" y="282" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="133" cy="112" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="261" y="213" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="96" cy="181" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="249" y="181" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="118" cy="143" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="223" y="206" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="93" cy="149" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="243" y="230" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="160" cy="131" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="233" y="222" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="140" cy="133" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="294" y="197" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<circle cx="82" cy="149" r="8" fill="#e95459" stroke="#fff" stroke-width="2"/>
+<rect x="232" y="213" width="14" height="14" fill="#173541" stroke="#fff" stroke-width="2"/>
+<line x1="95" y1="290" x2="285" y2="90" stroke="#626a70" stroke-width="2"/>
+<text x="75" y="100" font-size="19" fill="#252a30" font-weight="700" text-anchor="middle">cat</text>
+<text x="315" y="300" font-size="19" fill="#252a30" font-weight="700" text-anchor="middle">dog</text>
+<text x="185" y="345" font-size="19" fill="#252a30" font-weight="400" text-anchor="middle">Examples with the answer</text>
+<text x="185" y="372" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">→ find the border</text>
+<ellipse cx="480" cy="135" rx="62" ry="46" fill="none" stroke="#7a1f2b" stroke-width="2" stroke-dasharray="6 5"/>
+<circle cx="456" cy="125" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="503" cy="112" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="447" cy="141" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="464" cy="137" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="478" cy="127" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="516" cy="120" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="474" cy="120" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="490" cy="124" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<ellipse cx="635" cy="160" rx="62" ry="46" fill="none" stroke="#7a1f2b" stroke-width="2" stroke-dasharray="6 5"/>
+<circle cx="625" cy="172" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="622" cy="163" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="664" cy="140" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="603" cy="146" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="654" cy="166" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="616" cy="152" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="612" cy="158" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="602" cy="170" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<ellipse cx="550" cy="255" rx="62" ry="46" fill="none" stroke="#7a1f2b" stroke-width="2" stroke-dasharray="6 5"/>
+<circle cx="579" cy="278" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="567" cy="278" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="515" cy="244" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="584" cy="269" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="544" cy="277" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="559" cy="271" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="535" cy="240" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<circle cx="546" cy="237" r="8" fill="#626a70" stroke="#fff" stroke-width="2"/>
+<text x="560" y="345" font-size="19" fill="#252a30" font-weight="400" text-anchor="middle">Examples without answers</text>
+<text x="560" y="372" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">→ find the groups</text>
+<rect x="785" y="160" width="110" height="74" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="840.0" y="204.0" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Agent</text>
+<rect x="965" y="160" width="130" height="74" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="1030.0" y="204.0" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">World</text>
+<path d="M840,156 C850,90 1010,90 1025,156" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<text x="935" y="96" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">action</text>
+<path d="M1025,238 C1010,300 850,300 840,238" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<text x="935" y="310" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">reward: +1 or −1</text>
+<text x="935" y="345" font-size="19" fill="#252a30" font-weight="400" text-anchor="middle">Trial and error</text>
+<text x="935" y="372" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">→ find the best actions</text>
+</svg>

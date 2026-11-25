@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="1000" height="230" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>Private AI investment in 2025</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<line x1="170" y1="10" x2="170" y2="208" stroke="#c9ced2" stroke-width="1"/>
+<text x="158" y="50.0" font-size="24" fill="#252a30" font-weight="400" text-anchor="end">United States</text>
+<path d="M170,31.0 h676.0 q4,0 4,4 v16 q0,4 -4,4 h-676.0 z" fill="#7a1f2b"/>
+<text x="860" y="50.0" font-size="24" fill="#252a30" font-weight="700" text-anchor="start">$285.9 bn</text>
+<text x="158" y="116.0" font-size="24" fill="#252a30" font-weight="400" text-anchor="end">Europe</text>
+<path d="M170,97.0 h45.7 q4,0 4,4 v16 q0,4 -4,4 h-45.7 z" fill="#7a1f2b"/>
+<text x="230" y="116.0" font-size="24" fill="#252a30" font-weight="700" text-anchor="start">$20.9 bn</text>
+<text x="158" y="182.0" font-size="24" fill="#252a30" font-weight="400" text-anchor="end">China</text>
+<path d="M170,163.0 h25.5 q4,0 4,4 v16 q0,4 -4,4 h-25.5 z" fill="#7a1f2b"/>
+<text x="209" y="182.0" font-size="24" fill="#252a30" font-weight="700" text-anchor="start">$12.4 bn</text>
+</svg>

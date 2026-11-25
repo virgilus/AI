@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" width="900" height="270" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>Probability of the next token</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<text x="20" y="28" font-size="21" fill="#626a70" font-weight="400" text-anchor="start" font-style="italic">Next token after “The capital of France is …”</text>
+<line x1="200" y1="45" x2="200" y2="265" stroke="#c9ced2" stroke-width="1"/>
+<text x="188" y="74.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">Paris</text>
+<path d="M200,56.0 h546.0 q4,0 4,4 v14 q0,4 -4,4 h-546.0 z" fill="#7a1f2b"/>
+<text x="760" y="74.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">91.0%</text>
+<text x="188" y="118.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">Lyon</text>
+<path d="M200,100.0 h14.1 q4,0 4,4 v14 q0,4 -4,4 h-14.1 z" fill="#7a1f2b"/>
+<text x="228" y="118.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">3.0%</text>
+<text x="188" y="162.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">Marseille</text>
+<path d="M200,144.0 h3.0 q3.021978021978022,0 3.021978021978022,3.021978021978022 v15.956043956043956 q0,3.021978021978022 -3.021978021978022,3.021978021978022 h-3.0 z" fill="#7a1f2b"/>
+<text x="216" y="162.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">1.0%</text>
+<text x="188" y="206.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">London</text>
+<path d="M200,188.0 h1.5 q1.510989010989011,0 1.510989010989011,1.510989010989011 v18.978021978021978 q0,1.510989010989011 -1.510989010989011,1.510989010989011 h-1.5 z" fill="#7a1f2b"/>
+<text x="213" y="206.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">0.5%</text>
+<text x="188" y="250.0" font-size="20" fill="#252a30" font-weight="400" text-anchor="end">all other tokens</text>
+<path d="M200,232.0 h23.2 q4,0 4,4 v14 q0,4 -4,4 h-23.2 z" fill="#7a1f2b"/>
+<text x="237" y="250.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="start">4.5%</text>
+</svg>

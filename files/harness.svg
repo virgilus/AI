@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" width="1120" height="420" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>Model plus harness equals agent</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<rect x="190" y="10" width="740" height="400" rx="18" fill="#fff" stroke="#173541" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="560" y="400" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">the “harness”: ordinary software around the model</text>
+<rect x="440" y="140" width="240" height="120" rx="10" fill="#7a1f2b" stroke="#7a1f2b" stroke-width="2"/>
+<text x="560.0" y="197.0" font-size="26" fill="#fff" font-weight="700" text-anchor="middle">Model</text>
+<text x="560.0" y="227.0" font-size="18" fill="#fff" font-weight="400" text-anchor="middle">reasons and decides</text>
+<rect x="215" y="35" width="240" height="90" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="335.0" y="75.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Instructions</text>
+<text x="335.0" y="101.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">role, rules, goal</text>
+<rect x="665" y="35" width="240" height="90" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="785.0" y="75.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Tools</text>
+<text x="785.0" y="101.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">files, code, web, APIs</text>
+<rect x="215" y="265" width="240" height="90" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="335.0" y="305.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Memory</text>
+<text x="335.0" y="331.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">notes kept for later</text>
+<rect x="665" y="265" width="240" height="90" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="785.0" y="305.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">Permissions</text>
+<text x="785.0" y="331.5" font-size="17" fill="#626a70" font-weight="400" text-anchor="middle">what it may do alone</text>
+<path d="M440,150 L400,127" fill="none" stroke="#626a70" stroke-width="2" stroke-linejoin="round" marker-end="url(#m626a70)" marker-start="url(#m626a70)"/>
+<path d="M680,150 L720,127" fill="none" stroke="#626a70" stroke-width="2" stroke-linejoin="round" marker-end="url(#m626a70)" marker-start="url(#m626a70)"/>
+<path d="M440,252 L400,263" fill="none" stroke="#626a70" stroke-width="2" stroke-linejoin="round" marker-end="url(#m626a70)" marker-start="url(#m626a70)"/>
+<path d="M680,252 L720,263" fill="none" stroke="#626a70" stroke-width="2" stroke-linejoin="round" marker-end="url(#m626a70)" marker-start="url(#m626a70)"/>
+<rect x="10" y="155" width="130" height="90" rx="10" fill="#f3f5f6" stroke="#173541" stroke-width="2"/>
+<text x="75.0" y="207.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">You</text>
+<path d="M144,200 L436,200" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)" marker-start="url(#m173541)"/>
+<rect x="980" y="155" width="130" height="90" rx="10" fill="#f3f5f6" stroke="#173541" stroke-width="2"/>
+<text x="1045.0" y="194.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="middle">Outside</text>
+<text x="1045.0" y="219.0" font-size="20" fill="#252a30" font-weight="700" text-anchor="middle">world</text>
+<path d="M684,200 L976,200" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)" marker-start="url(#m173541)"/>
+</svg>

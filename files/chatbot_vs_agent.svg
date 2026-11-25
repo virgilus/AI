@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 400" width="1120" height="400" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>A chatbot answers, an agent acts in a loop</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<text x="20" y="40" font-size="26" fill="#7a1f2b" font-weight="700" text-anchor="start">Chatbot</text>
+<text x="20" y="66" font-size="18" fill="#626a70" font-weight="400" text-anchor="start" font-style="italic">one question, one answer</text>
+<rect x="300" y="15" width="180" height="80" rx="10" fill="#f3f5f6" stroke="#173541" stroke-width="2"/>
+<text x="390.0" y="62.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">You</text>
+<rect x="720" y="15" width="180" height="80" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="810.0" y="62.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">LLM</text>
+<path d="M484,42 L716,42" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)"/>
+<text x="600" y="34" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle">question</text>
+<path d="M716,72 L484,72" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)"/>
+<text x="600" y="94" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle">text</text>
+<line x1="20" y1="135" x2="1100" y2="135" stroke="#c9ced2"/>
+<text x="20" y="190" font-size="26" fill="#7a1f2b" font-weight="700" text-anchor="start">Agent</text>
+<text x="20" y="216" font-size="18" fill="#626a70" font-weight="400" text-anchor="start" font-style="italic">one goal, many steps</text>
+<rect x="300" y="225" width="150" height="80" rx="10" fill="#f3f5f6" stroke="#173541" stroke-width="2"/>
+<text x="375.0" y="272.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">You</text>
+<path d="M454,265 L526,265" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)"/>
+<text x="490" y="253" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle">goal</text>
+<rect x="530" y="160" width="440" height="215" rx="16" fill="#fff" stroke="#7a1f2b" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="555" y="225" width="150" height="80" rx="10" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<text x="630.0" y="272.5" font-size="22" fill="#252a30" font-weight="700" text-anchor="middle">LLM</text>
+<rect x="805" y="172" width="145" height="54" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="877.5" y="205.0" font-size="19" fill="#252a30" font-weight="700" text-anchor="middle">files</text>
+<rect x="805" y="240" width="145" height="54" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="877.5" y="273.0" font-size="19" fill="#252a30" font-weight="700" text-anchor="middle">terminal</text>
+<rect x="805" y="308" width="145" height="54" rx="10" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<text x="877.5" y="341.0" font-size="19" fill="#252a30" font-weight="700" text-anchor="middle">web &amp; apps</text>
+<path d="M630,221 C640,180 740,180 800,196" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<path d="M800,352 C740,356 640,350 630,309" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<text x="730" y="232" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">acts</text>
+<text x="728" y="322" font-size="18" fill="#626a70" font-weight="400" text-anchor="middle" font-style="italic">observes</text>
+<path d="M974,265 L1030,265" fill="none" stroke="#173541" stroke-width="3" stroke-linejoin="round" marker-end="url(#m173541)"/>
+<text x="1075" y="260" font-size="19" fill="#252a30" font-weight="700" text-anchor="middle">finished</text>
+<text x="1075" y="283" font-size="19" fill="#252a30" font-weight="700" text-anchor="middle">work</text>
+</svg>

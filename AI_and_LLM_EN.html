@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="AI_and_LLM_EN_files/libs/clipboard/clipboard.min.js"></script>
+<script src="AI_and_LLM_EN_files/libs/quarto-html/tabby.min.js"></script>
+<script src="AI_and_LLM_EN_files/libs/quarto-html/popper.min.js"></script>
+<script src="AI_and_LLM_EN_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="AI_and_LLM_EN_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="AI_and_LLM_EN_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="AI_and_LLM_EN_files/libs/quarto-html/quarto-syntax-highlighting-dark-6453f418aeef366c23116eb9cb0b6816.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
+
+  <meta name="author" content="Virgile PESCE">
+  <title>AI &amp; Machine Learning</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="AI_and_LLM_EN_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="AI_and_LLM_EN_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #e1e4e8; background-color: #24292e; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #e1e4e8; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #f97583; } /* Attribute */
+    code span.bn { color: #79b8ff; } /* BaseN */
+    code span.bu { color: #f97583; } /* BuiltIn */
+    code span.cf { color: #f97583; } /* ControlFlow */
+    code span.ch { color: #9ecbff; } /* Char */
+    code span.cn { color: #79b8ff; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #f97583; } /* DataType */
+    code span.dv { color: #79b8ff; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #f97583; font-weight: bold; } /* Extension */
+    code span.fl { color: #79b8ff; } /* Float */
+    code span.fu { color: #b392f0; } /* Function */
+    code span.im { color: #9ecbff; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #f97583; } /* Keyword */
+    code span.op { color: #e1e4e8; } /* Operator */
+    code span.ot { color: #b392f0; } /* Other */
+    code span.pp { color: #f97583; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #79b8ff; } /* SpecialChar */
+    code span.ss { color: #9ecbff; } /* SpecialString */
+    code span.st { color: #9ecbff; } /* String */
+    code span.va { color: #ffab70; } /* Variable */
+    code span.vs { color: #9ecbff; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="AI_and_LLM_EN_files/libs/revealjs/dist/theme/quarto-ce599bbac41cbca6ad956b8cafd1a012.css">
+  <link rel="stylesheet" href="theme_1.css">
+  <link rel="stylesheet" href="slide-chrome.css">
+  <link rel="stylesheet" href="AI_and_LLM.css">
+  <link href="AI_and_LLM_EN_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="AI_and_LLM_EN_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="AI_and_LLM_EN_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="AI_and_LLM_EN_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-dark">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-color="#173541" class="quarto-title-block center">
+  <h1 class="title">AI &amp; Machine Learning</h1>
+  <p class="subtitle">From the first machines to autonomous agents</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Virgile PESCE
+</div>
+</div>
+</div>
+
+</section>
+<section id="what-we-will-cover" class="slide level2">
+<h2>What we will cover</h2>
+<ol type="1">
+<li><strong>What is AI?</strong> Definitions, machine learning, neural networks</li>
+<li><strong>A short history</strong>: pioneers, winters and the deep learning boom</li>
+<li><strong>Inside a language model</strong>: tokens, attention, probabilities</li>
+<li><strong>From chatbot to agent</strong>: tools, memory, autonomy</li>
+<li><strong>Coding with AI</strong>: what it changes, what it breaks</li>
+<li><strong>The impact of AI</strong> on work, science and power</li>
+<li><strong>A new era?</strong> The Riemann hypothesis and the future of research</li>
+</ol>
+</section>
+<section id="what-is-ai" class="slide level2 divider" data-background-color="#173541">
+<h2>1. What is AI?</h2>
+</section>
+<section id="before-ai" class="slide level2">
+<h2>Before “AI”</h2>
+<p>“AI” is today’s buzzword. It follows a long list of others:</p>
+<ul>
+<li>data mining</li>
+<li>big data</li>
+<li>data science</li>
+<li>machine learning</li>
+<li>deep learning</li>
+</ul>
+<p>The words change quickly, the ideas much less.</p>
+</section>
+<section id="so-what-is-ai" class="slide level2">
+<h2>So what is AI?</h2>
+<div class="big">
+<p>The ability of a <strong>machine</strong> to perform tasks that <strong>would require intelligence</strong> if done by a <strong>human</strong>.</p>
+</div>
+<p><span class="center" style="display:block">Nothing in this definition requires a computer.</span></p>
+</section>
+<section id="how-old-is-ai" class="slide level2">
+<h2>How old is AI?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>With this definition, the automatic servant of <a href="https://en.wikipedia.org/wiki/Philo_of_Byzantium">Philon of Byzantium</a> (3rd century BC) is already a form of AI!</p>
+<p>Place a cup in its hand and it pours wine, then water.</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="files/philon_servant.jpg" alt="Replica of the automatic servant of Philon" height="440"></p>
+</div></div>
+<p class="credits">
+Replica by Kostas Kotsanas, photo by <a href="https://commons.wikimedia.org/wiki/File:Automatic_servant_of_Philon,_Museum_of_ancient_Greek_technology.jpg">Eunostos</a>, CC BY-SA 4.0.
+</p>
+</section>
+<section id="the-servant-of-philon-video" class="slide level2">
+<h2>The servant of Philon (video)</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/cK_8KOftT3M" width="1024" height="460" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><span class="small">If the video does not start: <a href="https://www.youtube.com/watch?v=cK_8KOftT3M">watch it on YouTube</a></span></p>
+</section>
+<section id="ai-in-computer-science" class="slide level2">
+<h2>AI in computer science</h2>
+<p>Today, “AI” usually means a subfield of <strong>computer science</strong>. The machine is now a computer running a <strong>program</strong>: it takes an input and produces an output.</p>
+
+<img data-src="files/machine.png" style="width:80.0%" alt="Input, program and output; a human operator conceives the program" class="r-stretch"></section>
+<section id="algorithm-or-program" class="slide level2">
+<h2>Algorithm or program?</h2>
+<p><strong>An algorithm</strong> is a list of instructions to reach a goal. A cooking recipe is an algorithm! 🧁</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="" aria-label="1"></a><span class="kw">def</span> double(numbers):</span>
+<span id="cb1-2"><a href="" aria-label="2"></a>    <span class="cf">return</span> [x <span class="op">*</span> <span class="dv">2</span> <span class="cf">for</span> x <span class="kw">in</span> numbers]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>A program</strong> is a set of instructions a machine can execute. It may run algorithms, and do other things too.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="" aria-label="1"></a><span class="bu">print</span>(<span class="st">"Hello world! Let's double some numbers:"</span>)</span>
+<span id="cb2-2"><a href="" aria-label="2"></a><span class="bu">print</span>(double([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="what-is-machine-learning" class="slide level2">
+<h2>What is machine learning?</h2>
+<p>Instead of writing the rules, we show <strong>examples</strong> and the program adjusts itself.</p>
+
+<img data-src="files/machine_learning.png" style="width:85.0%" alt="A machine learning program uses inputs and outputs to produce a learned program" class="r-stretch"><aside class="notes">
+<p>Machine learning is a subfield of AI in which models learn from data to make predictions or decisions, without being explicitly programmed for the task.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-ways-to-learn" class="slide level2">
+<h2>Three ways to learn</h2>
+
+<img data-src="files/ml_approaches.svg" alt="Supervised learning finds a border, unsupervised learning finds groups, reinforcement learning uses rewards" class="r-stretch"></section>
+<section id="which-approach-for-which-problem" class="slide level2">
+<h2>Which approach for which problem?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Supervised</th>
+<th>Unsupervised</th>
+<th>Reinforcement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Data</strong></td>
+<td>Examples + answers</td>
+<td>Examples only</td>
+<td>Rewards from actions</td>
+</tr>
+<tr class="even">
+<td><strong>Goal</strong></td>
+<td>Predict the answer</td>
+<td>Discover a structure</td>
+<td>Choose the best actions</td>
+</tr>
+<tr class="odd">
+<td><strong>Methods</strong></td>
+<td>Regression, decision trees</td>
+<td>K-means, PCA</td>
+<td>Q-learning</td>
+</tr>
+<tr class="even">
+<td><strong>Examples</strong></td>
+<td>Spam, house prices</td>
+<td>Customer groups</td>
+<td>Games, robots</td>
+</tr>
+</tbody>
+</table>
+<p>Language models <strong>combine</strong> them: they predict hidden text (<em>self-supervised</em>: the text itself is the answer), then learn from good examples, then from rewards.</p>
+</section>
+<section id="ai-machine-learning-deep-learning" class="slide level2">
+<h2>AI, machine learning, deep learning</h2>
+
+<img data-src="files/difference-machine-learning-deep-learning-IA.jpg" alt="Nested circles: AI contains machine learning, which contains deep learning" class="r-stretch"></section>
+<section id="an-artificial-neuron" class="slide level2">
+<h2>An artificial neuron</h2>
+<p>Multiply by the <strong>weights</strong>, add everything <strong>and the bias</strong>, squeeze. Umbrella?</p>
+
+<img data-src="files/neuron.svg" alt="0.9 times 2 plus 0.7 times 1 minus 1.5 gives 1.0, and the activation gives 0.73" class="r-stretch"><p>The weights (2 and 1) and the bias are the <strong>parameters</strong>. Training finds them.</p>
+</section>
+<section id="a-network-that-learns" class="slide level2">
+<h2>A network that learns</h2>
+
+<img data-src="files/neural_network.svg" alt="A network with two hidden layers and the four steps of training" class="r-stretch"><p>Step 3 is <strong>backpropagation</strong>. Repeated over millions of examples, it reduces the error little by little. Many hidden layers: this is <strong>deep</strong> learning.</p>
+</section>
+<section id="a-short-history" class="slide level2 divider" data-background-color="#173541">
+<h2>2. A short history</h2>
+</section>
+<section id="six-pioneers" class="slide level2">
+<h2>Six pioneers</h2>
+<p>AI was not born in 2020. Let’s meet six people who made it possible.</p>
+<div class="columns portraits">
+<div class="column" style="width:16%;">
+<p><img data-src="files/joseph_marie_jacquard.jpg"></p>
+<p><strong>Jacquard</strong><br>
+1752–1834</p>
+</div><div class="column" style="width:16%;">
+<p><img data-src="files/charles_babbage.jpg"></p>
+<p><strong>Babbage</strong><br>
+1791–1871</p>
+</div><div class="column" style="width:16%;">
+<p><img data-src="files/ada_lovelace.jpg"></p>
+<p><strong>Lovelace</strong><br>
+1815–1852</p>
+</div><div class="column" style="width:16%;">
+<p><img data-src="files/alan_turing.jpg"></p>
+<p><strong>Turing</strong><br>
+1912–1954</p>
+</div><div class="column" style="width:16%;">
+<p><img data-src="files/von_neumann.gif"></p>
+<p><strong>Von Neumann</strong><br>
+1903–1957</p>
+</div><div class="column" style="width:16%;">
+<p><img data-src="files/edsger_dijkstra.jpg"></p>
+<p><strong>Dijkstra</strong><br>
+1930–2002</p>
+</div></div>
+</section>
+<section id="joseph-marie-jacquard-17521834" class="slide level2">
+<h2>Joseph-Marie Jacquard (1752–1834)</h2>
+<p>In 1804, <a href="https://en.wikipedia.org/wiki/Joseph_Marie_Jacquard">Jacquard</a> patents a loom <strong>programmed by punched cards</strong>: change the cards, change the pattern.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="files/Jacquard_loom.full.jpg" alt="A Jacquard loom" height="390"></p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="files/jacquard_loom_punchcards.jpg" alt="The punched cards of a Jacquard loom" height="390"></p>
+</div></div>
+<p class="credits">
+Punched cards: photo by <a href="https://commons.wikimedia.org/wiki/File:A_Jacquard_loom_showing_information_punchcards,_National_Museum_of_Scotland.jpg">Stephencdickson</a>, CC BY-SA 4.0.
+</p>
+</section>
+<section id="machines-and-work-the-canuts" class="slide level2">
+<h2>Machines and work: the Canuts</h2>
+<p>The silk weavers of Lyon revolt in <strong>1831</strong> and <strong>1834</strong>. The looms produce more, but the price paid for their work keeps falling.</p>
+
+<img data-src="files/Revolte_de_canuts_a_Lyon_en_1834.jpg" alt="The Canut revolt in Lyon in 1834" class="r-stretch"><aside class="notes">
+<p>The Canuts are often described as machine breakers. The main demand of 1831 was a guaranteed minimum price (the “tarif”): who benefits from the gains in productivity? The question is still open with AI.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="charles-babbage-17911871" class="slide level2">
+<h2>Charles Babbage (1791–1871)</h2>
+<p>In 1837, <a href="https://en.wikipedia.org/wiki/Charles_Babbage">Babbage</a> describes the <a href="https://en.wikipedia.org/wiki/Analytical_engine">Analytical Engine</a>, the first design of a <strong>general-purpose computer</strong>. It was never completed.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="files/charles_babbage.jpg" alt="Portrait of Charles Babbage" height="390"></p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="files/analytical_engine.jpg" alt="Trial model of part of the Analytical Engine" height="390"></p>
+</div></div>
+</section>
+<section id="ada-lovelace-18151852" class="slide level2">
+<h2>Ada Lovelace (1815–1852)</h2>
+<p>In 1843, <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Lovelace</a> publishes “Note G”, often considered the <strong>first computer program</strong>: it computes <a href="https://en.wikipedia.org/wiki/Bernoulli_number">Bernoulli numbers</a>.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="files/ada_lovelace.jpg" alt="Portrait of Ada Lovelace" height="390"></p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="files/note_g_lovelace.jpg" alt="Diagram of Note G" height="390"></p>
+</div></div>
+</section>
+<section id="alan-turing-19121954" class="slide level2">
+<h2>Alan Turing (1912–1954)</h2>
+<p>In 1936, <a href="https://en.wikipedia.org/wiki/Alan_Turing">Turing</a> imagines a <strong>universal machine</strong>, able to run any algorithm. In 1950, he asks: “Can machines think?”</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="files/alan_turing.jpg" alt="Portrait of Alan Turing" height="390"></p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="files/turing_machine.jpg" alt="A physical model of a Turing machine" height="390"></p>
+</div></div>
+</section>
+<section id="john-von-neumann-19031957" class="slide level2">
+<h2>John von Neumann (1903–1957)</h2>
+<p>In 1945, <a href="https://en.wikipedia.org/wiki/John_von_Neumann">von Neumann</a> describes the architecture our computers still use: <strong>program and data share the same memory</strong>.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="files/von_neumann.gif" alt="Portrait of John von Neumann" height="390"></p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="files/von_neumann_architecture.png" alt="Von Neumann architecture" height="340"></p>
+</div></div>
+</section>
+<section id="edsger-dijkstra-19302002" class="slide level2">
+<h2>Edsger Dijkstra (1930–2002)</h2>
+<p>In 1956, <a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra">Dijkstra</a> devises his <strong>shortest path algorithm</strong>, published in 1959 and still used everywhere.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="files/edsger_dijkstra.jpg" alt="Portrait of Edsger Dijkstra" height="390"></p>
+</div><div class="column" style="width:60%;">
+<p><img data-src="files/dijkstra_algorithm.gif" alt="Animation of the shortest path algorithm" height="340"></p>
+</div></div>
+</section>
+<section id="seventy-years-in-one-picture" class="slide level2">
+<h2>Seventy years in one picture</h2>
+
+<img data-src="files/timeline.svg" alt="Timeline of AI from 1950 to 2026" class="r-stretch"></section>
+<section id="two-families-of-ai" class="slide level2">
+<h2>Two families of AI</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Symbolic AI</strong></p>
+<p>Humans write the rules.</p>
+<blockquote>
+<p>If it rains, the ground is wet.<br>
+If the ground is wet, the grass grows.<br>
+<strong>So</strong> if it rains, the grass grows.</p>
+</blockquote>
+<p>Easy to explain, hard to extend.</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Machine learning</strong></p>
+<p>The machine finds the rules in <strong>data</strong>.</p>
+<blockquote>
+<p>10,000 photos of cats<br>
+10,000 photos of dogs<br>
+<strong>So</strong> this new photo is a cat (97%).</p>
+</blockquote>
+<p>Powerful, but harder to explain.</p>
+</div></div>
+</section>
+<section id="symbolic-ai-in-action" class="slide level2">
+<h2>Symbolic AI in action</h2>
+<div class="columns">
+<div class="column" style="width:64%;">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mycin">MYCIN</a> (1970s): hundreds of medical rules to suggest antibiotics</li>
+<li>Expert systems (1980s): the knowledge of specialists turned into rules</li>
+<li><a href="https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)">Deep Blue</a> (1997): beats Garry Kasparov at chess</li>
+</ul>
+<p>No learning from examples here: experts and fast computation do the job.</p>
+</div><div class="column" style="width:36%;">
+<p><img data-src="files/deep_blue.jpg" alt="The IBM Deep Blue computer" height="430"></p>
+</div></div>
+<p class="credits">
+Deep Blue, photo by <a href="https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg">James the photographer</a>, CC BY 2.0.
+</p>
+</section>
+<section id="the-first-programs-that-learn" class="slide level2">
+<h2>The first programs that learn</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>1952</strong>: <a href="https://en.wikipedia.org/wiki/Arthur_Samuel_(computer_scientist)">Arthur Samuel</a> starts a checkers program that will improve by playing against itself.</p>
+<p><img data-src="files/arthur_samuel.webp" alt="Arthur Samuel in front of an IBM computer" height="330"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>1958</strong>: <a href="https://en.wikipedia.org/wiki/Frank_Rosenblatt">Frank Rosenblatt</a> presents the perceptron, ancestor of neural networks.</p>
+<p><img data-src="files/perceptron_navy.jpg" alt="The Mark I Perceptron learning to recognise the letter C" height="330"></p>
+</div></div>
+<p class="credits">
+Mark I Perceptron: <a href="https://commons.wikimedia.org/wiki/File:330-PSA-80-60_(USN_710739)_(20897323365).jpg">National Museum of the U.S. Navy</a>, public domain.
+</p>
+</section>
+<section id="promises-and-winters" class="slide level2">
+<h2>Promises and winters</h2>
+<p>“Within a generation, […] the problem of creating artificial intelligence will substantially be solved” (Marvin Minsky, 1967). Twice, the money stopped.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>What happened</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1956–1974</strong></td>
+<td>Enthusiasm: the field gets its name and its first successes</td>
+</tr>
+<tr class="even">
+<td><strong>1974–1980</strong></td>
+<td><strong>First winter</strong>: promises not kept, funding cut</td>
+</tr>
+<tr class="odd">
+<td><strong>1980–1987</strong></td>
+<td>Expert systems: AI enters companies</td>
+</tr>
+<tr class="even">
+<td><strong>1987–1993</strong></td>
+<td><strong>Second winter</strong>: too expensive, too rigid</td>
+</tr>
+</tbody>
+</table>
+<p>Ideas were often right, but <strong>data and computers</strong> were missing.</p>
+</section>
+<section id="s2000s-learning-from-data" class="slide level2">
+<h2>1990s–2000s: learning from data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>AI moves from rules to <strong>statistics</strong></li>
+<li>Simple, analysable models (linear models, SVM)</li>
+<li>First real uses: reading cheques, filtering spam</li>
+<li>Netflix recommends films with <em>Cinematch</em> (2000)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="files/lenet5.png" style="width:100.0%" alt="The LeNet-5 network"></p>
+<p><span class="small">LeNet-5 (1998) reads handwritten digits.</span></p>
+</div></div>
+<p class="credits">
+LeNet-5 architecture: Wikimedia Commons.
+</p>
+</section>
+<section id="the-turning-point" class="slide level2">
+<h2>2012: the turning point</h2>
+<p>A deep neural network, <strong>AlexNet</strong>, wins the <a href="https://en.wikipedia.org/wiki/ImageNet">ImageNet</a> challenge by a wide margin.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="files/winners_alexnet.webp" alt="Ilya Sutskever, Alex Krizhevsky and Geoffrey Hinton" height="290"></p>
+<p><span class="small">Ilya Sutskever, Alex Krizhevsky and Geoffrey Hinton</span></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="files/imagenet_2012.png" alt="Error rates of the teams in 2012" height="340"></p>
+</div></div>
+</section>
+<section id="why-does-deep-learning-work-now" class="slide level2">
+<h2>Why does deep learning work now?</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><strong>Large datasets</strong></p>
+<p>Images, text and video from the web</p>
+<p><img data-src="files/neural_networks.png" style="width:85.0%" alt="A small neural network"></p>
+</div><div class="column" style="width:33%;">
+<p><strong>Computing power</strong></p>
+<p>GPUs do thousands of operations in parallel</p>
+<p><img data-src="files/gpu_tpu.png" style="width:100.0%" alt="A GPU and a TPU"></p>
+</div><div class="column" style="width:33%;">
+<p><strong>Software</strong></p>
+<p>Open-source frameworks for everyone</p>
+<p><img data-src="files/frameworks.png" style="width:100.0%" alt="Logos of deep learning frameworks"></p>
+</div></div>
+</section>
+<section id="the-godfathers-of-deep-learning" class="slide level2">
+<h2>The “godfathers” of deep learning</h2>
+<p>They kept working on neural networks during the winters, and received the <strong>Turing Award in 2018</strong>.</p>
+<div class="columns center">
+<div class="column" style="width:33%;">
+<p><img data-src="files/hinton.jpg" height="330"></p>
+<p>Geoffrey Hinton</p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="files/lecun.jpg" height="330"></p>
+<p>Yann LeCun</p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="files/bengio.jpg" height="330"></p>
+<p>Yoshua Bengio</p>
+</div></div>
+</section>
+<section id="seeing" class="slide level2">
+<h2>Seeing</h2>
+<p>Classify, detect and segment images: photos, medical scans, roads…</p>
+
+<img data-src="files/vision.png" alt="Examples of image classification, detection and segmentation" class="r-stretch"></section>
+<section id="creating-images" class="slide level2">
+<h2>Creating images</h2>
+<p>From a sentence to a picture: DALL-E (2021), Imagen, Midjourney and Stable Diffusion (2022).</p>
+
+<img data-src="files/imagen.png" alt="Three images generated by Imagen from text" class="r-stretch"></section>
+<section id="speech-and-sound" class="slide level2">
+<h2>Speech and sound</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li><strong>Transcription</strong>: Whisper</li>
+<li><strong>Voice</strong>: VALL-E, voice assistants</li>
+<li><strong>Music</strong>: Jukebox, Suno</li>
+</ul>
+<p>WaveNet (2016) generates sound one sample at a time. Language models do the same with text!</p>
+</div><div class="column" style="width:55%;">
+<p><img data-src="files/WaveNet.gif" style="width:100.0%" alt="Animation of WaveNet"></p>
+</div></div>
+</section>
+<section id="games" class="slide level2">
+<h2>Games</h2>
+<p>Learning strategies through self-play: AlphaGo, OpenAI Five, MuZero.</p>
+
+<img data-src="files/games.png" alt="AlphaGo, Atari and StarCraft" class="r-stretch"></section>
+<section id="biology" class="slide level2">
+<h2>Biology</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>AlphaFold</strong> predicts the 3D structure of proteins from their sequence.</p>
+<p>A work of years in the laboratory can take minutes.</p>
+<p>Nobel Prize in Chemistry, <strong>2024</strong>.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="files/alphafold.png" alt="Protein structure predicted by AlphaFold" height="430"></p>
+</div></div>
+</section>
+<section id="language" class="slide level2">
+<h2>Language</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 30%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Models</th>
+<th>What was new</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>2017</strong></td>
+<td>Transformer</td>
+<td>The architecture: <em>Attention Is All You Need</em></td>
+</tr>
+<tr class="even">
+<td><strong>2018–2020</strong></td>
+<td>BERT, T5, GPT-3</td>
+<td>Training on huge amounts of text</td>
+</tr>
+<tr class="odd">
+<td><strong>2022</strong></td>
+<td>ChatGPT</td>
+<td>A conversation anyone can use</td>
+</tr>
+<tr class="even">
+<td><strong>2023</strong></td>
+<td>GPT-4, Claude, Llama, Gemini</td>
+<td>Competition, open models, images</td>
+</tr>
+<tr class="odd">
+<td><strong>2024–2025</strong></td>
+<td>o1, DeepSeek-R1</td>
+<td>Models that “think” before answering</td>
+</tr>
+<tr class="even">
+<td><strong>2025–2026</strong></td>
+<td>Claude Code, Codex…</td>
+<td><strong>Agents</strong> that act</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="inside-a-language-model" class="slide level2 divider" data-background-color="#173541">
+<h2>3. Inside a language model</h2>
+</section>
+<section id="what-is-an-llm" class="slide level2">
+<h2>What is an LLM?</h2>
+<div class="big">
+<p>A <strong>Large Language Model</strong> is a program trained to predict <strong>the next piece of text</strong>.</p>
+</div>
+<p>Everything else (chatting, translating, summarising, coding) builds on this ability.</p>
+</section>
+<section id="the-big-picture" class="slide level2">
+<h2>The big picture</h2>
+
+<img data-src="files/llm_pipeline.svg" alt="Text, tokens, embeddings, transformer, probabilities, next token, and back" class="r-stretch"><p>We will now open each box.</p>
+</section>
+<section id="tokens-cutting-the-text" class="slide level2">
+<h2>Tokens: cutting the text</h2>
+<p>A model does not read words. It reads <strong>tokens</strong>: whole words, pieces of words, punctuation.</p>
+<p class="center" style="font-size:1.1em">
+<span class="tok">Large<small>4532</small></span><span class="tok">&nbsp;Language<small>982</small></span><span class="tok">&nbsp;Models<small>18273</small></span><span class="tok">&nbsp;are<small>527</small></span><span class="tok">&nbsp;powerful<small>8147</small></span><span class="tok">.<small>13</small></span>
+</p>
+<p>Each token has a number (illustrative here). The model only sees the <strong>numbers</strong>.</p>
+</section>
+<section id="why-do-tokens-matter" class="slide level2">
+<h2>Why do tokens matter?</h2>
+<ul>
+<li>The <strong>price</strong> of an API is counted in tokens</li>
+<li>The <strong>memory</strong> of a conversation is limited in tokens</li>
+<li>Some <strong>languages</strong> need more tokens than English to say the same thing</li>
+<li>It explains odd mistakes: the model sees chunks, so <strong>counting letters</strong> in a word is hard</li>
+</ul>
+</section>
+<section id="embeddings-giving-meaning-to-numbers" class="slide level2">
+<h2>Embeddings: giving meaning to numbers</h2>
+<div class="columns">
+<div class="column" style="width:44%;">
+<p>Each token becomes a <strong>vector</strong>: a long list of numbers learned during training.</p>
+<p>Related meanings get <strong>nearby vectors</strong>.</p>
+<p>A vector is not a dictionary definition: its numbers rarely have a simple meaning.</p>
+</div><div class="column" style="width:56%;">
+<p><img data-src="files/embeddings.svg" style="width:100.0%" alt="Words grouped by meaning"></p>
+</div></div>
+<aside class="notes">
+<p>Example: 50,000 tokens and 4,096 dimensions give a table of 50,000 × 4,096 numbers. A sequence of 3 tokens becomes a 3 × 4,096 matrix.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="attention-using-the-context" class="slide level2">
+<h2>Attention: using the context</h2>
+<p>What does “it” refer to? Each token <strong>looks at the others</strong> to find out.</p>
+
+<img data-src="files/attention.svg" alt="Attention from it to ball" class="r-stretch"><p>Order matters too: <em>the dog bites the man</em> is not <em>the man bites the dog</em>. The model also encodes the <strong>position</strong> of each token.</p>
+</section>
+<section id="the-transformer" class="slide level2">
+<h2>The Transformer</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<ul>
+<li>Introduced in 2017 by Google researchers: <a href="https://arxiv.org/abs/1706.03762"><em>Attention Is All You Need</em></a></li>
+<li>A stack of <strong>identical blocks</strong>, with different learned values</li>
+<li>GPT-3 has 96 of them</li>
+<li>Computes in parallel, so it <strong>scales</strong> very well</li>
+</ul>
+</div><div class="column" style="width:45%;">
+<p><img data-src="files/gpt_architecture.png" alt="The architecture of GPT" height="470"></p>
+</div></div>
+<p class="credits">
+GPT architecture: Wikimedia Commons.
+</p>
+</section>
+<section id="what-does-7b-mean" class="slide level2">
+<h2>What does “7B” mean?</h2>
+<p><strong>Parameters</strong> are the numbers adjusted during training. “7B” means 7 billion of them.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th style="text-align: right;">Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FunctionGemma (used in our practical work)</td>
+<td style="text-align: right;">0.27 billion</td>
+</tr>
+<tr class="even">
+<td>GPT-3 (2020)</td>
+<td style="text-align: right;">175 billion</td>
+</tr>
+<tr class="odd">
+<td>Llama 3.1, largest version (2024)</td>
+<td style="text-align: right;">405 billion</td>
+</tr>
+<tr class="even">
+<td>DeepSeek-R1 (2025)</td>
+<td style="text-align: right;">671 billion</td>
+</tr>
+<tr class="odd">
+<td>GPT-4, Claude, Gemini Pro</td>
+<td style="text-align: right;">not published</td>
+</tr>
+</tbody>
+</table>
+<p><strong>More parameters do not automatically mean better answers.</strong></p>
+<aside class="notes">
+<p>Weights or parameters? Strictly, a layer computes y = Wx + b: W holds the weights, b the biases, and both are parameters. In everyday use, “weights” often means all of them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="from-scores-to-probabilities" class="slide level2">
+<h2>From scores to probabilities</h2>
+<p>The model gives a score <span class="math inline">\(z_i\)</span> to <strong>every</strong> token of its vocabulary. <em>Softmax</em> turns the scores into probabilities:</p>
+<p><span class="math display">\[P(\text{token}_i) = \frac{e^{z_i}}{\sum_j e^{z_j}}\]</span></p>
+
+<img data-src="files/probabilities.svg" style="width:75.0%" alt="Paris 91%, Lyon 3%, Marseille 1%, London 0.5%, others 4.5%" class="r-stretch"></section>
+<section id="choosing-the-next-token" class="slide level2">
+<h2>Choosing the next token</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Greedy</strong></td>
+<td>Always take the most probable token</td>
+</tr>
+<tr class="even">
+<td><strong>Temperature</strong></td>
+<td>Make the distribution sharper or flatter</td>
+</tr>
+<tr class="odd">
+<td><strong>Top-k</strong></td>
+<td>Keep only the <em>k</em> most probable tokens</td>
+</tr>
+<tr class="even">
+<td><strong>Top-p</strong></td>
+<td>Keep the smallest group whose total reaches <em>p</em></td>
+</tr>
+</tbody>
+</table>
+<p>They can be combined. This is why the same question can give <strong>two different answers</strong>.</p>
+</section>
+<section id="temperature" class="slide level2">
+<h2>Temperature</h2>
+<p><span class="math display">\[P(\text{token}_i) = \frac{e^{z_i/T}}{\sum_j e^{z_j/T}}\]</span></p>
+
+<img data-src="files/temperature.svg" alt="The same distribution at temperature 0.3, 1 and 2" class="r-stretch"></section>
+<section id="one-token-at-a-time" class="slide level2">
+<h2>One token at a time</h2>
+<p>The answer is generated <strong>autoregressively</strong>: each new token is added to the text, then everything starts again.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="" aria-label="1"></a>The capital of France is                →  " Paris"</span>
+<span id="cb3-2"><a href="" aria-label="2"></a>The capital of France is Paris          →  ","</span>
+<span id="cb3-3"><a href="" aria-label="3"></a>The capital of France is Paris,         →  " a"</span>
+<span id="cb3-4"><a href="" aria-label="4"></a>The capital of France is Paris, a       →  " city"</span>
+<span id="cb3-5"><a href="" aria-label="5"></a>...                                     →  &lt;end&gt;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>It stops at a special <strong>end token</strong>, or when a length limit is reached.</p>
+</section>
+<section id="the-context-window" class="slide level2">
+<h2>The context window</h2>
+
+<img data-src="files/context_window.svg" alt="Instructions, tools, conversation, documents and free space" class="r-stretch"><p>In 2020, about 2,000 tokens. In 2026, <strong>1 million</strong> or more. Outside this window, the model sees <strong>nothing</strong>.</p>
+<p>The model does not receive the tools themselves, only a <strong>text</strong> that describes each one.</p>
+</section>
+<section id="how-is-a-model-trained" class="slide level2">
+<h2>How is a model trained?</h2>
+
+<img data-src="files/training.svg" alt="Pre-training, fine-tuning, reinforcement" class="r-stretch"><aside class="notes">
+<p>Pre-training minimises the next-token prediction error: the loss is minus the sum of the log-probabilities of the right tokens.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="training-or-inference" class="slide level2">
+<h2>Training or inference?</h2>
+<div class="columns">
+<div class="column" style="width:32%;">
+<p><strong>Training</strong></p>
+<ul>
+<li><em>Changes</em> the parameters</li>
+<li>Weeks or months</li>
+<li>Thousands of GPUs</li>
+</ul>
+</div><div class="column" style="width:32%;">
+<p><strong>Inference</strong></p>
+<ul>
+<li><em>Uses</em> the parameters</li>
+<li>A few seconds</li>
+<li>One question at a time</li>
+</ul>
+</div><div class="column" style="width:36%;">
+<p><img data-src="files/csiro_gpu_cluster.jpg" style="width:100.0%" alt="A GPU cluster"></p>
+</div></div>
+<p>Talking to ChatGPT, Claude or a local model with Ollama is <strong>inference</strong>: the model does not learn while answering you.</p>
+<p class="credits">
+GPU cluster, photo by <a href="https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_11313_The_CSIRO_GPU_cluster_at_the_data_centre.jpg">CSIRO</a>, CC BY 3.0.
+</p>
+</section>
+<section id="plausible-does-not-mean-true" class="slide level2">
+<h2>Plausible does not mean true</h2>
+<p>An LLM can write a <strong>false</strong> sentence as fluently as a true one. This is a <em>hallucination</em>.</p>
+<div class="columns">
+<div class="column" style="width:42%;">
+<ul>
+<li>Invented facts or references</li>
+<li>Knowledge that stops at its <strong>training date</strong></li>
+<li><strong>Biases</strong> from the data</li>
+<li>Errors, stated with confidence</li>
+</ul>
+<p><strong>Check</strong> what matters, always.</p>
+</div><div class="column" style="width:58%;">
+<p><img data-src="files/hallucination_chatgpt.png" style="width:100.0%" alt="ChatGPT summarises a New York Times article from a fake address"></p>
+<p class="credits">
+The address is <b>fake</b> and ChatGPT had no internet access: it invented everything. <a href="https://commons.wikimedia.org/wiki/File:ChatGPT_hallucination.png">Wikimedia Commons</a>, public domain.
+</p>
+</div></div>
+</section>
+<section id="try-it-yourself" class="slide level2">
+<h2>Try it yourself</h2>
+<p>Open a language model in your browser and look inside:</p>
+<div class="big">
+<p><a href="https://chyams-llm-explorer.hf.space/">LLM Explorer</a></p>
+</div>
+<p>Find a sentence where the second most probable token would change the whole story.</p>
+</section>
+<section id="from-chatbot-to-agent" class="slide level2 divider" data-background-color="#173541">
+<h2>4. From chatbot to agent</h2>
+</section>
+<section id="four-years-of-change" class="slide level2">
+<h2>Four years of change</h2>
+
+<img data-src="files/chat_to_agents.svg" alt="2022 chat, 2023 tools and images, 2024 reasoning, 2025 coding agents, 2026 long tasks" class="r-stretch"><p>In November 2022, ChatGPT could only produce text. It had no web access, no files, no tools.</p>
+</section>
+<section id="an-old-dream" class="slide level2">
+<h2>An old dream</h2>
+<div class="columns">
+<div class="column" style="width:62%;">
+<p><strong>Shakey</strong> (1966–1972) was the first mobile robot able to reason about its own actions:</p>
+<ul>
+<li><strong>perceive</strong> the room with a camera</li>
+<li><strong>plan</strong> a route</li>
+<li><strong>act</strong>, then look again</li>
+</ul>
+<p>Today’s agents follow the same loop, with a language model as the planner.</p>
+</div><div class="column" style="width:38%;">
+<p><img data-src="files/shakey.jpg" alt="Shakey the robot" height="460"></p>
+</div></div>
+<p class="credits">
+Shakey, photo by <a href="https://commons.wikimedia.org/wiki/File:SRI_Shakey_robot,_1969,_Computer_History_Museum.jpg">The wub</a>, CC BY-SA 4.0.
+</p>
+</section>
+<section id="chatbot-or-agent" class="slide level2">
+<h2>Chatbot or agent?</h2>
+
+<img data-src="files/chatbot_vs_agent.svg" alt="A chatbot answers a question, an agent acts in a loop with tools" class="r-stretch"></section>
+<section id="what-is-an-agent" class="slide level2">
+<h2>What is an agent?</h2>
+<div class="big">
+<p>Agents are “typically just <strong>LLMs</strong> using <strong>tools</strong> based on <strong>environmental feedback</strong> in a <strong>loop</strong>.”</p>
+</div>
+<p class="credits center">
+Anthropic, <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a> (2024)
+</p>
+</section>
+<section id="the-loop" class="slide level2">
+<h2>The loop</h2>
+
+<img data-src="files/agent_loop.svg" alt="Goal, decide, act, observe, repeat, result" class="r-stretch"></section>
+<section id="the-loop-in-code" class="slide level2">
+<h2>The loop, in code</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="" aria-label="1"></a>messages <span class="op">=</span> [goal]</span>
+<span id="cb4-2"><a href="" aria-label="2"></a></span>
+<span id="cb4-3"><a href="" aria-label="3"></a><span class="cf">for</span> step <span class="kw">in</span> <span class="bu">range</span>(MAX_STEPS):             <span class="co"># never loop forever</span></span>
+<span id="cb4-4"><a href="" aria-label="4"></a>    answer <span class="op">=</span> llm(messages, tools)         <span class="co"># 1. decide</span></span>
+<span id="cb4-5"><a href="" aria-label="5"></a>    messages.append(answer)</span>
+<span id="cb4-6"><a href="" aria-label="6"></a></span>
+<span id="cb4-7"><a href="" aria-label="7"></a>    <span class="cf">if</span> <span class="kw">not</span> answer.tool_calls:             <span class="co"># nothing left to do</span></span>
+<span id="cb4-8"><a href="" aria-label="8"></a>        <span class="cf">break</span></span>
+<span id="cb4-9"><a href="" aria-label="9"></a></span>
+<span id="cb4-10"><a href="" aria-label="10"></a>    <span class="cf">for</span> call <span class="kw">in</span> answer.tool_calls:</span>
+<span id="cb4-11"><a href="" aria-label="11"></a>        <span class="cf">if</span> is_allowed(call):              <span class="co"># permissions</span></span>
+<span id="cb4-12"><a href="" aria-label="12"></a>            result <span class="op">=</span> run(call)            <span class="co"># 2. act</span></span>
+<span id="cb4-13"><a href="" aria-label="13"></a>        <span class="cf">else</span>:</span>
+<span id="cb4-14"><a href="" aria-label="14"></a>            result <span class="op">=</span> <span class="st">"Refused by the user"</span></span>
+<span id="cb4-15"><a href="" aria-label="15"></a>        messages.append(result)           <span class="co"># 3. observe</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>answer.tool_calls</code> is the list of tools the model <strong>asks</strong> to use, for example <code>read_file("notes.txt")</code>. Empty list: it has finished.</p>
+</section>
+<section id="model-harness-agent" class="slide level2">
+<h2>Model + harness = agent</h2>
+
+<img data-src="files/harness.svg" alt="The model in the centre, with instructions, tools, memory and permissions" class="r-stretch"><p>You can change the <strong>model</strong> and keep the same <strong>harness</strong>.</p>
+</section>
+<section id="tools-the-model-asks-the-software-acts" class="slide level2">
+<h2>Tools: the model asks, the software acts</h2>
+
+<img data-src="files/tool_call.svg" alt="Sequence of a tool call between you, the harness and the model" class="r-stretch"><p>The model <strong>never</strong> runs anything itself. It writes a request; the harness decides.</p>
+</section>
+<section id="memory" class="slide level2">
+<h2>Memory</h2>
+<p>Between two requests, an LLM remembers <strong>nothing</strong>. The harness creates the illusion of memory.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kind</th>
+<th>How it works</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Short term</strong></td>
+<td>The whole conversation is sent again at each step</td>
+</tr>
+<tr class="even">
+<td><strong>Compaction</strong></td>
+<td>Old messages are replaced by a summary</td>
+</tr>
+<tr class="odd">
+<td><strong>Long term</strong></td>
+<td>The agent writes notes in files, and reads them later</td>
+</tr>
+<tr class="even">
+<td><strong>RAG</strong></td>
+<td>Relevant documents are searched and added to the prompt</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="more-than-text" class="slide level2">
+<h2>More than text</h2>
+<p>A <strong>multimodal</strong> model also understands other kinds of data:</p>
+<ul>
+<li><strong>Images</strong>: read a chart, a photo, a screenshot</li>
+<li><strong>Documents</strong>: PDF files, tables, scanned pages</li>
+<li><strong>Audio and video</strong>: listen, transcribe, describe</li>
+</ul>
+<p>For an agent, this means <strong>seeing</strong> the screen and checking its own work.</p>
+</section>
+<section id="mcp-a-shared-plug-for-tools" class="slide level2">
+<h2>MCP: a shared plug for tools</h2>
+
+<img data-src="files/mcp.svg" alt="Without MCP nine connectors, with MCP six" class="r-stretch"></section>
+<section id="the-model-context-protocol" class="slide level2">
+<h2>The Model Context Protocol</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li>Open standard published by Anthropic in <strong>November 2024</strong></li>
+<li>Connects AI applications to tools and data, as USB connects devices</li>
+<li>Adopted by OpenAI, Google, Microsoft…</li>
+<li>Since <strong>December 2025</strong>, hosted by the <a href="https://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/">Linux Foundation</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><img data-src="files/Model_Context_Protocol_logo.svg.webp" style="width:80.0%" alt="MCP logo"></p>
+</div></div>
+</section>
+<section id="mcp-what-does-it-look-like" class="slide level2">
+<h2>MCP: what does it look like?</h2>
+<p>Text messages in <strong>JSON</strong>, sent to a local program or over HTTP.</p>
+<div class="columns mcp">
+<div class="column" style="width:50%;">
+<p><strong>1. What can you do?</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb5-1"><a href="" aria-label="1"></a><span class="fu">{</span> <span class="dt">"jsonrpc"</span><span class="fu">:</span> <span class="st">"2.0"</span><span class="fu">,</span> <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb5-2"><a href="" aria-label="2"></a>  <span class="dt">"method"</span><span class="fu">:</span> <span class="st">"tools/list"</span> <span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The server answers:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb6-1"><a href="" aria-label="1"></a><span class="fu">{</span> <span class="dt">"jsonrpc"</span><span class="fu">:</span> <span class="st">"2.0"</span><span class="fu">,</span> <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb6-2"><a href="" aria-label="2"></a>  <span class="dt">"result"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"tools"</span><span class="fu">:</span> <span class="ot">[</span> <span class="fu">{</span></span>
+<span id="cb6-3"><a href="" aria-label="3"></a>    <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"weather_current"</span><span class="fu">,</span></span>
+<span id="cb6-4"><a href="" aria-label="4"></a>    <span class="dt">"description"</span><span class="fu">:</span> <span class="st">"Weather for a place"</span><span class="fu">,</span></span>
+<span id="cb6-5"><a href="" aria-label="5"></a>    <span class="dt">"inputSchema"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb6-6"><a href="" aria-label="6"></a>      <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"object"</span><span class="fu">,</span></span>
+<span id="cb6-7"><a href="" aria-label="7"></a>      <span class="dt">"properties"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb6-8"><a href="" aria-label="8"></a>        <span class="dt">"location"</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">"type"</span><span class="fu">:</span> <span class="st">"string"</span><span class="fu">}</span> <span class="fu">}</span></span>
+<span id="cb6-9"><a href="" aria-label="9"></a>    <span class="fu">}</span> <span class="fu">}</span> <span class="ot">]</span> <span class="fu">}</span> <span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column" style="width:50%;">
+<p><strong>2. Do it, please</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb7-1"><a href="" aria-label="1"></a><span class="fu">{</span> <span class="dt">"jsonrpc"</span><span class="fu">:</span> <span class="st">"2.0"</span><span class="fu">,</span> <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span></span>
+<span id="cb7-2"><a href="" aria-label="2"></a>  <span class="dt">"method"</span><span class="fu">:</span> <span class="st">"tools/call"</span><span class="fu">,</span></span>
+<span id="cb7-3"><a href="" aria-label="3"></a>  <span class="dt">"params"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb7-4"><a href="" aria-label="4"></a>    <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"weather_current"</span><span class="fu">,</span></span>
+<span id="cb7-5"><a href="" aria-label="5"></a>    <span class="dt">"arguments"</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">"location"</span><span class="fu">:</span> <span class="st">"Paris"</span><span class="fu">}</span> <span class="fu">}</span> <span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The server answers:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb8-1"><a href="" aria-label="1"></a><span class="fu">{</span> <span class="dt">"jsonrpc"</span><span class="fu">:</span> <span class="st">"2.0"</span><span class="fu">,</span> <span class="dt">"id"</span><span class="fu">:</span> <span class="dv">2</span><span class="fu">,</span></span>
+<span id="cb8-2"><a href="" aria-label="2"></a>  <span class="dt">"result"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"content"</span><span class="fu">:</span> <span class="ot">[</span> <span class="fu">{</span></span>
+<span id="cb8-3"><a href="" aria-label="3"></a>    <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"text"</span><span class="fu">,</span></span>
+<span id="cb8-4"><a href="" aria-label="4"></a>    <span class="dt">"text"</span><span class="fu">:</span> <span class="st">"Paris: 12 °C, light rain"</span></span>
+<span id="cb8-5"><a href="" aria-label="5"></a>  <span class="fu">}</span> <span class="ot">]</span> <span class="fu">}</span> <span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
+<p class="credits">
+Simplified from the <a href="https://modelcontextprotocol.io/docs/learn/architecture">MCP documentation</a>: version and cache fields are omitted.
+</p>
+</section>
+<section id="is-mcp-safe" class="slide level2">
+<h2>Is MCP safe?</h2>
+<p>MCP is a protocol, like HTTP. It is neither safe nor dangerous by itself.</p>
+<p><strong>It depends on:</strong></p>
+<ul>
+<li>the <strong>server</strong> you install: do you trust its author?</li>
+<li>the <strong>rights</strong> you give it: read only, or write too?</li>
+<li>the <strong>confirmation</strong> asked before sensitive actions</li>
+</ul>
+<p>Connecting a server means giving <strong>someone’s code</strong> access to your data.</p>
+</section>
+<section id="levels-of-autonomy" class="slide level2">
+<h2>Levels of autonomy</h2>
+
+<img data-src="files/autonomy.svg" alt="From autocomplete to background agent" class="r-stretch"></section>
+<section id="coding-with-ai" class="slide level2 divider" data-background-color="#173541">
+<h2>5. Coding with AI</h2>
+</section>
+<section id="vibe-coding" class="slide level2">
+<h2>Vibe coding</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
+<p>The term was coined by <a href="https://en.wikipedia.org/wiki/Andrej_Karpathy">Andrej Karpathy</a> in February 2025.</p>
+<p>You describe what you want in plain language, accept the code, and <strong>hardly read it</strong>.</p>
+<p>It is different from a developer who uses AI <strong>and reviews</strong> the result.</p>
+</div><div class="column" style="width:32%;">
+<p><img data-src="files/karpathy.png" alt="Andrej Karpathy" height="400"></p>
+</div></div>
+<p class="credits">
+Andrej Karpathy, by <a href="https://commons.wikimedia.org/wiki/File:Andrej_Karpathy,_OpenAI.png">Gladwin Analytics</a>, CC BY 3.0.
+</p>
+</section>
+<section id="what-ai-brings" class="slide level2">
+<h2>What AI brings</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>For developers</strong></p>
+<ul>
+<li>Repetitive code written faster</li>
+<li>Help with a new language</li>
+<li>Help to find bugs</li>
+<li>More time for design</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>For everyone</strong></p>
+<ul>
+<li>A prototype without being a developer</li>
+<li>Projects that were too expensive</li>
+<li>Explanations on demand</li>
+</ul>
+</div></div>
+</section>
+<section id="what-can-go-wrong" class="slide level2">
+<h2>What can go wrong</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Risk</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Security</strong></td>
+<td>Flaws, or a library that does not exist</td>
+</tr>
+<tr class="even">
+<td><strong>Maintenance</strong></td>
+<td>Code nobody understands</td>
+</tr>
+<tr class="odd">
+<td><strong>Performance</strong></td>
+<td>It works, but slowly</td>
+</tr>
+<tr class="even">
+<td><strong>Architecture</strong></td>
+<td>Everything in one file, duplicated</td>
+</tr>
+<tr class="odd">
+<td><strong>Legal</strong></td>
+<td>Copied code, unknown licence</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="zero-hand-written-code" class="slide level2">
+<h2>“Zero hand written code”</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="files/tweet_1.png" class="nostretch" style="width:86.0%" alt="Post of 15 March 2025: my saas was built with Cursor, zero hand written code"></p>
+<p><img data-src="files/tweet_3.png" class="nostretch" style="width:86.0%" alt="Post of 16 March 2025: I just vibe coded my way out of a cyber attack"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="files/tweet_2.png" class="nostretch" style="width:78.0%" alt="Post of 16 March 2025: someone is trying to find security vulnerabilities in my app"></p>
+</div></div>
+<p class="credits">
+March 2025. Original posts: <a href="https://x.com/leojr94_/status/1900767509621674109">1</a>, <a href="https://x.com/leojr94_/status/1901132000871731401">2</a>, <a href="https://x.com/leojr94_/status/1901183590744158487">3</a>.
+</p>
+</section>
+<section id="five-days-later" class="slide level2">
+<h2>Five days later</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="files/tweet_4.png" style="width:100.0%" alt="Post of 17 March 2025: guys, I'm under attack"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="files/tweet_5.png" style="width:100.0%" alt="Post of 20 March 2025: I'm shutting down my app"></p>
+</div></div>
+<p>Used-up API keys, a bypassed subscription, junk in the database. The problem was not AI, but <strong>nobody understood the code</strong>.</p>
+<p class="credits">
+Original posts: <a href="https://x.com/leojr94_/status/1901560276488511759">4</a>, <a href="https://x.com/leojr94_/status/1902537756674318347">5</a>. Found through <a href="https://ludditus.com/2025/03/26/not-everyone-is-dumb/">Not everyone is dumb regarding AI</a>.
+</p>
+</section>
+<section id="prototype-or-product" class="slide level2">
+<h2>Prototype or product?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>A prototype</strong> ✅</p>
+<p>Vibe coding is a good way to test an idea, or to make a small tool for yourself.</p>
+</div><div class="column" style="width:50%;">
+<p><strong>A product</strong> ⚠️</p>
+<p>Users, personal data, payments: somebody must <strong>understand</strong> the code.</p>
+</div></div>
+</section>
+<section id="the-impact-of-ai" class="slide level2 divider" data-background-color="#173541">
+<h2>6. The impact of AI</h2>
+</section>
+<section id="work" class="slide level2">
+<h2>Work</h2>
+<div class="columns">
+<div class="column" style="width:66%;">
+<ul>
+<li>Earlier revolutions automated <strong>manual</strong> tasks; this one reaches <strong>intellectual</strong> work</li>
+<li>Some jobs disappear, others appear, most <strong>change</strong></li>
+<li>Remember the Canuts: who benefits?</li>
+</ul>
+</div><div class="column" style="width:34%;">
+<p><img data-src="files/Revolte_de_canuts_a_Lyon_en_1834.jpg" class="" alt="The Canut revolt" height="190"></p>
+</div></div>
+<p><strong>What do the 2026 studies say?</strong></p>
+<ul>
+<li><a href="https://digitaleconomy.stanford.edu/news/canariesaug26/">Stanford</a>: no general job loss, but a <strong>19% gap</strong> for ages 22–25 in exposed jobs (cause not proven)</li>
+<li><a href="https://www.journaldunet.com/business/1552481-l-ocde-affirme-que-l-intelligence-artificielle-ne-provoque-pas-de-baisse-generalisee-de-l-emploi-dans-ses-pays-membres-selon-son-rapport-2026/">OECD</a> (in French): AI is reshaping work, not reducing it</li>
+<li><a href="https://www.tresor.economie.gouv.fr/Articles/2026/06/30/l-intelligence-artificielle-quels-effets-sur-l-emploi">French Treasury</a> (in French): total effect still <strong>uncertain</strong></li>
+</ul>
+</section>
+<section id="from-labour-to-capital" class="slide level2">
+<h2>From labour to capital?</h2>
+<p>If machines do more of the work, income may move:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="files/rolling_mill.jpg" style="width:100.0%" alt="Workers in an iron rolling mill, painting by Menzel"></p>
+<p><strong>from labour</strong>: people paid for their time and skills</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="files/server_racks.jpg" style="width:100.0%" alt="A row of server racks and nobody in the room"></p>
+<p><strong>to capital</strong>: owners of models, data and computers</p>
+</div></div>
+<p>Will some be left behind? How should the gains be <strong>shared</strong>?</p>
+<p class="credits">
+Adolph Menzel, <a href="https://commons.wikimedia.org/wiki/File:Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg">The Iron Rolling Mill</a>, 1872–1875. <a href="https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg">Server racks</a>, Carl Lender, CC BY 2.0. Both cropped.
+</p>
+</section>
+<section id="security-and-privacy" class="slide level2">
+<h2>Security and privacy</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Defence</strong></p>
+<ul>
+<li>Find flaws before attackers do</li>
+<li>Read and fix old code</li>
+<li>Watch a network day and night</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Attack</strong></p>
+<ul>
+<li>Find the same flaws</li>
+<li>Credible phishing in any language</li>
+<li>Deepfakes of voices and faces</li>
+</ul>
+</div></div>
+<p>And what you send to an online model <strong>leaves your computer</strong>. Never share a password or personal data without authorisation.</p>
+</section>
+<section id="sovereignty-and-control" class="slide level2">
+<h2>Sovereignty and control</h2>
+<p>Private investment in AI in 2025:</p>
+
+<img data-src="files/investment.svg" style="width:90.0%" alt="United States 285.9, Europe 20.9, China 12.4 billion dollars" class="r-stretch"><p>The most powerful models belong to a few companies, mostly American. Alternatives: <strong>Mistral</strong> in Europe, <strong>open-weight</strong> models such as DeepSeek or Qwen in China.</p>
+<p class="credits">
+<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy">Stanford AI Index 2026</a>. Chinese public funding is not included.
+</p>
+</section>
+<section id="europe-how-much-public-money" class="slide level2">
+<h2>Europe: how much public money?</h2>
+<p>Nobody publishes a <strong>complete total</strong>. What we know:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Amount</th>
+<th>But…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>InvestAI</strong> (2025)</td>
+<td>€200 billion</td>
+<td>A target, mostly private money</td>
+</tr>
+<tr class="even">
+<td><strong>AI gigafactories</strong> (2026)</td>
+<td>up to €10 billion</td>
+<td>EU + states; more than €20 billion private expected</td>
+</tr>
+<tr class="odd">
+<td><strong>Already available</strong></td>
+<td>about €1 billion</td>
+<td>The rest depends on the 2028+ EU budget</td>
+</tr>
+<tr class="even">
+<td><strong>Public contracts</strong> (2013–2024)</td>
+<td>$3.7 billion</td>
+<td>UK included, research grants excluded</td>
+</tr>
+</tbody>
+</table>
+<p>For comparison, the United States: <strong>$20.4 billion</strong> (2013–2024), grants <strong>included</strong>.</p>
+<p class="credits">
+<a href="https://digital-strategy.ec.europa.eu/en/news/eu-launches-ai-gigafactories-call-boost-europes-computing-capacity-and-unlock-more-eu30-billion">European Commission</a> and <a href="https://www.euronews.com/2026/07/30/eu-opens-call-for-seven-gigafactories-to-train-next-generation-ai-technologies">Euronews</a> (July 2026); <a href="https://openfuture.eu/our-work/steering-ai-investment/">Open Future</a>; <a href="https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_8_policy_and_governance.pdf">AI Index 2026, ch.&nbsp;8</a>.
+</p>
+</section>
+<section id="a-new-era" class="slide level2 divider" data-background-color="#173541">
+<h2>7. A new era?</h2>
+</section>
+<section id="mathematics-722-papers-in-one-day" class="slide level2">
+<h2>Mathematics: 722 papers in one day</h2>
+<div class="columns">
+<div class="column" style="width:62%;">
+<p>On <strong>6 October 2026</strong>, OpenAI <a href="https://en.wikipedia.org/wiki/OpenAI_bulk_release_of_mathematical_papers">releases 722 manuscripts</a> written by a model.</p>
+<ul>
+<li>About half come with a computer-checked proof</li>
+<li>3 were withdrawn within a day, 14 were revised</li>
+</ul>
+<p>Fields medallist <strong>Hugo Duminil-Copin</strong>: “They have annihilated my field of research.”</p>
+</div><div class="column" style="width:38%;">
+<p><img data-src="files/duminil_copin.jpg" style="width:100.0%" alt="Hugo Duminil-Copin in 2014"></p>
+</div></div>
+<p><strong>What is a proof for: being true, or being understood?</strong></p>
+<p class="credits">
+Hugo Duminil-Copin in 2014, photo by <a href="https://commons.wikimedia.org/wiki/File:Hugo_Duminil-Copin_in_Oberwolfach.jpg">Tatjana Ruf</a>, CC BY-SA 2.5.
+</p>
+</section>
+<section id="research-without-researchers" class="slide level2">
+<h2>Research without researchers?</h2>
+<p>Agents can read papers, write code, run experiments and draft results.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Hopes</strong></p>
+<ul>
+<li>Faster discoveries</li>
+<li>Testing many more ideas</li>
+<li>Help for small teams</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Concerns</strong></p>
+<ul>
+<li>Too many results to verify</li>
+<li>Who is responsible for an error?</li>
+<li>How do we train young researchers?</li>
+</ul>
+</div></div>
+</section>
+<section id="a-question-from-1859" class="slide level2">
+<h2>A question from 1859</h2>
+<div class="columns">
+<div class="column" style="width:20%;">
+<p><img data-src="files/riemann.jpg" alt="Portrait of Bernhard Riemann" height="215"></p>
+</div><div class="column" style="width:80%;">
+<p>Prime numbers (2, 3, 5, 7, 11…) seem to appear at random. <strong>Bernhard Riemann</strong> links them to the zeros of a function, ζ.</p>
+<p><strong>His hypothesis:</strong> all the non-trivial zeros lie on <strong>one line</strong>.</p>
+<p><span class="math display">\[\zeta(s) = 0 \;\text{ and }\; s \notin \{-2, -4, -6, \dots\} \;\Rightarrow\; \operatorname{Re}(s) = \tfrac{1}{2}\]</span></p>
+</div></div>
+<p><img data-src="files/zeta.svg" style="width:95.0%" alt="The zeta function on the critical line and its first ten zeros"></p>
+<aside class="notes">
+<p>One of the seven Millennium Problems of the Clay Institute (one million dollars each). The curve was computed for this slide. Seeing ten zeros, or ten billion, on the line proves nothing about all of them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="november-2026" class="slide level2">
+<h2>20 November 2026</h2>
+<div class="columns">
+<div class="column" style="width:64%;">
+<p><strong>Levent Alpöge</strong>, a mathematician at Anthropic, publishes a proof found with an <strong>unreleased Claude model</strong>.</p>
+<ul>
+<li><strong>17 million</strong> lines of Lean, in 175,187 files</li>
+<li><strong>Six weeks</strong> of work in October and November</li>
+<li>Covers a <strong>generalised</strong> version (Dirichlet)</li>
+<li>For human readers: a <strong>4-page</strong> note</li>
+</ul>
+</div><div class="column" style="width:36%;">
+<p><img data-src="files/alpoge.jpg" style="width:100.0%" alt="Levent Alpöge in 2024"></p>
+</div></div>
+<p>Same day: a proof “with no AI” by Alessandro Masullo, <strong>not verified</strong>.</p>
+<p class="credits">
+<a href="https://en.wikipedia.org/wiki/Alp%C3%B6ge's_proof_of_the_Riemann_hypothesis">Wikipedia</a>, <a href="https://www.scientificamerican.com/article/dueling-claims-of-riemann-hypothesis-proofs-emerge/">Scientific American</a>. Levent Alpöge in 2024, photo by <a href="https://commons.wikimedia.org/wiki/File:Levent_Alp%C3%B6ge_2024_MFO.jpg">Marlene Ruf</a>, CC BY-SA 2.0 DE.
+</p>
+</section>
+<section id="is-it-true" class="slide level2">
+<h2>Is it true?</h2>
+<p><strong>Lean</strong> is a language in which a computer checks <strong>every step</strong> of a proof.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Is it really Riemann’s statement?</td>
+<td>Yes: the definition of the public library Mathlib</td>
+</tr>
+<tr class="even">
+<td>Does the code compile?</td>
+<td>Yes: rebuilt dozens of times by volunteers</td>
+</tr>
+<tr class="odd">
+<td>Was the statement changed on the way?</td>
+<td>No: verified by comparison tools</td>
+</tr>
+<tr class="even">
+<td>Do independent checkers agree?</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>“We have full confidence that Alpöge’s proof […] is correct.” (<a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">Lean FRO and Mathlib Initiative</a>, 21 November)</p>
+</section>
+<section id="is-it-understood" class="slide level2">
+<h2>Is it understood?</h2>
+<p><strong>Not yet.</strong> On 24 November, there is no complete proof readable by humans.</p>
+<ul>
+<li>Two mathematicians, helped by AI, published <strong>summaries</strong>. One is a 265-page draft that still leaves key steps unproved</li>
+<li>Terence Tao: “the digestion process will take <strong>some time</strong>”</li>
+<li>The Association for Human Mathematics contests its <strong>value</strong>: no human can answer for it</li>
+<li>The Clay Institute now lists the problem as <strong>“active”</strong>, not solved</li>
+</ul>
+<p>A machine can tell us <strong>that</strong> it is true, without telling us <strong>why</strong>.</p>
+<p class="credits">
+<a href="https://terrytao.wordpress.com/">Terence Tao’s blog</a>, <a href="https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/">Michael Rubinstein</a>, <a href="https://www.sciencenews.org/article/riemann-hypothesis-solved-math-ai">Science News</a>, The Next Web.
+</p>
+</section>
+<section id="what-does-it-change" class="slide level2">
+<h2>What does it change?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mathematics</strong></td>
+<td>Hundreds of results “true if Riemann is true” gain a foundation</td>
+</tr>
+<tr class="even">
+<td><strong>Cryptography</strong></td>
+<td>Codes are <strong>not</strong> broken: most experts already assumed it was true</td>
+</tr>
+<tr class="odd">
+<td><strong>Publishing</strong></td>
+<td>Who reviews 17 million lines? Who is the author?</td>
+</tr>
+<tr class="even">
+<td><strong>Researchers</strong></td>
+<td>Less “is it true?”, more “what does it mean?”</td>
+</tr>
+<tr class="odd">
+<td><strong>Power</strong></td>
+<td>The model is private, and belongs to a company</td>
+</tr>
+</tbody>
+</table>
+<p>The announcement came one day after Anthropic’s <strong>IPO</strong>: the mathematics can be checked, the publicity must be <strong>questioned</strong>.</p>
+</section>
+<section id="has-the-machine-overtaken-us" class="slide level2">
+<h2>Has the machine overtaken us?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Yes, at some tasks</strong></p>
+<ul>
+<li>Combining “all number theory produced in the last 50 years” (F. Nuccio)</li>
+<li>Writing and checking millions of steps</li>
+<li>Never getting tired</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>No, not on its own</strong></p>
+<ul>
+<li>A specialist chose the problem and steered the model</li>
+<li>Humans created the theories it used</li>
+<li>Humans decide what <strong>matters</strong></li>
+</ul>
+</div></div>
+<p>“A very skilled AI <strong>jockey</strong> riding a very fast AI <strong>horse</strong>.” (Steven Strogatz)</p>
+<p class="credits">
+Quotes: <a href="https://en.wikipedia.org/wiki/Alp%C3%B6ge's_proof_of_the_Riemann_hypothesis">Wikipedia</a>, from Quanta and other press articles.
+</p>
+</section>
+<section id="recursive-self-improvement" class="slide level2">
+<h2>Recursive self-improvement</h2>
+<p>An AI “fully autonomously designing and developing <strong>its own successor</strong>”.</p>
+
+<img data-src="files/rsi.svg" alt="A model does research, trains a better model, and so on" class="r-stretch"><p>In 1965, I. J. Good already imagined an “intelligence explosion”. It has <strong>not been demonstrated</strong> today.</p>
+<p class="credits">
+Definition: <a href="https://www.anthropic.com/institute/recursive-self-improvement">Anthropic, When AI builds itself</a> (2026).
+</p>
+</section>
+<section id="is-it-happening" class="slide level2">
+<h2>Is it happening?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Signs that it starts</strong></p>
+<ul>
+<li>Over <strong>80%</strong> of new code at Anthropic was written by Claude (May 2026)</li>
+<li>Progress there is about <strong>1.9×</strong> faster than before on well-defined tasks (METR estimate)</li>
+<li>Anthropic says it reached its threshold for automated research, counting <strong>future</strong> models</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Reasons to doubt</strong></p>
+<ul>
+<li>“Not clearly accelerated on <strong>public</strong> measures”</li>
+<li>Humans “still supply most of the research <strong>judgment</strong>”</li>
+<li>Chips and energy do not improve themselves</li>
+<li>The best figures come from the <strong>companies</strong></li>
+</ul>
+</div></div>
+<p class="credits">
+<a href="https://forecastingresearch.org/research/recursive-self-improvement-v1">Forecasting Research Institute</a>, review of 24 November 2026; Anthropic (2026).
+</p>
+</section>
+<section id="beyond-our-understanding" class="slide level2">
+<h2>Beyond our understanding?</h2>
+
+<img data-src="files/proofs.svg" alt="Computer proofs from 1976 to 2026" class="r-stretch"><p>We already trust proofs that nobody has read in full. What is new: the <strong>ideas</strong> may come from the machine too.</p>
+<p>It is not inevitable. We can require explanations, or stop what nobody can explain (<a href="https://arxiv.org/abs/2610.10064">comprehension audits</a>).</p>
+</section>
+<section id="a-new-era-your-turn" class="slide level2">
+<h2>A new era? Your turn</h2>
+<ol type="1">
+<li>Would you accept a <strong>medicine</strong> that works, if nobody understands why?</li>
+<li>Who deserves the <strong>prize</strong>: the mathematician, the model, the company, or the authors of 50 years of number theory?</li>
+<li>Should we keep <strong>learning</strong> what a machine does better than us?</li>
+<li>Who should have the right to <strong>stop</strong> an AI that improves itself?</li>
+</ol>
+</section>
+<section id="credits" class="slide level2">
+<h2>Credits</h2>
+<p>This slideshow was created by <a href="https://github.com/virgilus">virgilus</a> using <a href="https://quarto.org">Quarto</a>. It was inspired by the lectures of the <a href="https://github.com/data-psl/lectures2025">Data Science and Machine Learning</a> program, by Arthur Mensch, Zaccharie Ramzi and Hugo Richard.</p>
+<p>Boxed diagrams and charts were made for this deck. Other images come from Wikimedia Commons and from course resources; they are credited on their slide when the source is known.</p>
+</section>
+<section id="references" class="slide level2">
+<h2>References</h2>
+<ul>
+<li>Vaswani et al., <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a> (2017)</li>
+<li>Anthropic, <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a> (2024)</li>
+<li>MCP, <a href="https://modelcontextprotocol.io">Official website</a></li>
+<li>Lean FRO and Mathlib, <a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">Lean verification of the Riemann Hypothesis</a> (2026)</li>
+<li>Forecasting Research Institute, <a href="https://forecastingresearch.org/research/recursive-self-improvement-v1">How close is recursive self-improvement?</a> (2026)</li>
+<li>Stanford HAI, <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">AI Index 2026</a></li>
+</ul>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="AI_and_LLM_EN_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

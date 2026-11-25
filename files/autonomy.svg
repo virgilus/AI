@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 400" width="1120" height="400" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>Levels of autonomy</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<rect x="10" y="280" width="212" height="110" rx="6" fill="#f3f5f6" stroke="none" stroke-width="2"/>
+<text x="116" y="316" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Autocomplete</text>
+<text x="116" y="344" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">suggests the</text>
+<text x="116" y="368" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">next line</text>
+<rect x="232" y="218" width="212" height="172" rx="6" fill="#f7e6e3" stroke="none" stroke-width="2"/>
+<text x="338" y="254" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Chat</text>
+<text x="338" y="282" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">answers,</text>
+<text x="338" y="306" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">you copy-paste</text>
+<rect x="454" y="156" width="212" height="234" rx="6" fill="#eccfcb" stroke="none" stroke-width="2"/>
+<text x="560" y="192" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Assistant</text>
+<text x="560" y="220" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">acts, asks</text>
+<text x="560" y="244" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">every time</text>
+<rect x="676" y="94" width="212" height="296" rx="6" fill="#c97f80" stroke="none" stroke-width="2"/>
+<text x="782" y="130" font-size="21" fill="#252a30" font-weight="700" text-anchor="middle">Supervised agent</text>
+<text x="782" y="158" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">acts alone,</text>
+<text x="782" y="182" font-size="18" fill="#252a30" font-weight="400" text-anchor="middle">you review</text>
+<rect x="898" y="32" width="212" height="358" rx="6" fill="#7a1f2b" stroke="none" stroke-width="2"/>
+<text x="1004" y="68" font-size="21" fill="#fff" font-weight="700" text-anchor="middle">Background agent</text>
+<text x="1004" y="96" font-size="18" fill="#fff" font-weight="400" text-anchor="middle">runs for hours,</text>
+<text x="1004" y="120" font-size="18" fill="#fff" font-weight="400" text-anchor="middle">reports back</text>
+<path d="M30,200 L560,50" fill="none" stroke="#626a70" stroke-width="2" stroke-linejoin="round" marker-end="url(#m626a70)"/>
+<text x="250" y="112" font-size="20" fill="#626a70" font-style="italic" text-anchor="middle" transform="rotate(-15.8 250 112)">more autonomy, more responsibility</text>
+</svg>

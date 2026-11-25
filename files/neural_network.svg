@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 400" width="1120" height="400" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif" role="img"><title>A neural network and its training loop</title><defs><marker id="m7a1f2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a1f2b"/></marker><marker id="m173541" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#173541"/></marker><marker id="me95459" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e95459"/></marker><marker id="m626a70" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#626a70"/></marker><marker id="m252a30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#252a30"/></marker></defs>
+<line x1="120" y1="124.0" x2="310" y2="58.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="120" y1="124.0" x2="310" y2="124.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="120" y1="124.0" x2="310" y2="190.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="120" y1="124.0" x2="310" y2="256.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="120" y1="124.0" x2="310" y2="322.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="120" y1="190.0" x2="310" y2="58.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="120" y1="190.0" x2="310" y2="124.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="120" y1="190.0" x2="310" y2="190.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="120" y1="190.0" x2="310" y2="256.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="120" y1="190.0" x2="310" y2="322.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="120" y1="256.0" x2="310" y2="58.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="120" y1="256.0" x2="310" y2="124.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="120" y1="256.0" x2="310" y2="190.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="120" y1="256.0" x2="310" y2="256.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="120" y1="256.0" x2="310" y2="322.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="58.0" x2="500" y2="58.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="310" y1="58.0" x2="500" y2="124.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="310" y1="58.0" x2="500" y2="190.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="310" y1="58.0" x2="500" y2="256.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="58.0" x2="500" y2="322.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="310" y1="124.0" x2="500" y2="58.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="124.0" x2="500" y2="124.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="124.0" x2="500" y2="190.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="124.0" x2="500" y2="256.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="124.0" x2="500" y2="322.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="310" y1="190.0" x2="500" y2="58.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="310" y1="190.0" x2="500" y2="124.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="310" y1="190.0" x2="500" y2="190.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="190.0" x2="500" y2="256.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="310" y1="190.0" x2="500" y2="322.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="310" y1="256.0" x2="500" y2="58.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="310" y1="256.0" x2="500" y2="124.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="310" y1="256.0" x2="500" y2="190.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="310" y1="256.0" x2="500" y2="256.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="310" y1="256.0" x2="500" y2="322.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="310" y1="322.0" x2="500" y2="58.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="310" y1="322.0" x2="500" y2="124.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="310" y1="322.0" x2="500" y2="190.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="310" y1="322.0" x2="500" y2="256.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="310" y1="322.0" x2="500" y2="322.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="500" y1="58.0" x2="690" y2="157.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="500" y1="58.0" x2="690" y2="223.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="500" y1="124.0" x2="690" y2="157.0" stroke="#9fa8ae" stroke-width="0.8"/>
+<line x1="500" y1="124.0" x2="690" y2="223.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="500" y1="190.0" x2="690" y2="157.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="500" y1="190.0" x2="690" y2="223.0" stroke="#9fa8ae" stroke-width="1.2"/>
+<line x1="500" y1="256.0" x2="690" y2="157.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="500" y1="256.0" x2="690" y2="223.0" stroke="#9fa8ae" stroke-width="2.2"/>
+<line x1="500" y1="322.0" x2="690" y2="157.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<line x1="500" y1="322.0" x2="690" y2="223.0" stroke="#9fa8ae" stroke-width="3.2"/>
+<circle cx="120" cy="124.0" r="21" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<circle cx="120" cy="190.0" r="21" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<circle cx="120" cy="256.0" r="21" fill="#e3edf0" stroke="#173541" stroke-width="2"/>
+<circle cx="310" cy="58.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="310" cy="124.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="310" cy="190.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="310" cy="256.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="310" cy="322.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="500" cy="58.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="500" cy="124.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="500" cy="190.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="500" cy="256.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="500" cy="322.0" r="21" fill="#f7e6e3" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="690" cy="157.0" r="21" fill="#7a1f2b" stroke="#7a1f2b" stroke-width="2"/>
+<circle cx="690" cy="223.0" r="21" fill="#7a1f2b" stroke="#7a1f2b" stroke-width="2"/>
+<text x="120" y="385" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle">input</text>
+<text x="405" y="385" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle">hidden layers</text>
+<text x="690" y="385" font-size="19" fill="#626a70" font-weight="400" text-anchor="middle">output</text>
+<text x="55" y="197" font-size="19" fill="#252a30" font-weight="400" text-anchor="middle">pixels</text>
+<text x="720" y="163" font-size="19" fill="#252a30" font-weight="700" text-anchor="start">cat: 0.8</text>
+<text x="720" y="229" font-size="19" fill="#252a30" font-weight="700" text-anchor="start">dog: 0.2</text>
+<rect x="850" y="10" width="250" height="64" rx="10" fill="#f3f5f6" stroke="#173541" stroke-width="2"/>
+<text x="975.0" y="48.5" font-size="20" fill="#252a30" font-weight="700" text-anchor="middle">1. Predict</text>
+<rect x="850" y="110" width="250" height="64" rx="10" fill="#f3f5f6" stroke="#173541" stroke-width="2"/>
+<text x="975.0" y="148.5" font-size="20" fill="#252a30" font-weight="700" text-anchor="middle">2. Measure the error</text>
+<rect x="850" y="210" width="250" height="64" rx="10" fill="#f3f5f6" stroke="#173541" stroke-width="2"/>
+<text x="975.0" y="248.5" font-size="20" fill="#252a30" font-weight="700" text-anchor="middle">3. Trace it back</text>
+<rect x="850" y="310" width="250" height="64" rx="10" fill="#7a1f2b" stroke="#7a1f2b" stroke-width="2"/>
+<text x="975.0" y="348.5" font-size="20" fill="#fff" font-weight="700" text-anchor="middle">4. Adjust the weights</text>
+<path d="M975,77 L975,107" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<path d="M975,177 L975,207" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+<path d="M975,277 L975,307" fill="none" stroke="#e95459" stroke-width="3" stroke-linejoin="round" marker-end="url(#me95459)"/>
+</svg>
